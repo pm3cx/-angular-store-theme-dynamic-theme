@@ -29,14 +29,15 @@ export class AppComponent implements OnInit {
 
   private init(theme: string) {
     const head = this.document.getElementsByTagName('head')[0];
+    const path = '../src/app/styles/themes/';
     let themeLink = this.document.getElementById('theme') as HTMLLinkElement;
     if (themeLink) {
-      themeLink.href = '../src/app/themes/' + theme + '.css';
+      themeLink.href = path + theme + '.css';
     } else {
       const style = this.document.createElement('link');
       style.id = 'theme';
       style.rel = 'stylesheet';
-      style.href = '../src/app/themes/' + theme + '.css';
+      style.href = path + theme + '.css';
       head.appendChild(style);
     }
   }
