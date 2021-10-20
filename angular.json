@@ -20,14 +20,14 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.css",
+              "src/app/styles/styles.scss",
               {
-                "input": "src/app/themes/dark-theme.scss",
+                "input": "src/app/styles/themes/dark-theme.scss",
                 "bundleName": "dark-theme",
                 "inject": false
               },
               {
-                "input": "src/app/themes/light-theme.scss",
+                "input": "src/app/styles/themes/light-theme.scss",
                 "bundleName": "light-theme",
                 "inject": false
               }
@@ -79,14 +79,14 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "styles.css",
+              "src/app/styles/styles.scss",
               {
-                "input": "src/app/themes/dark-theme.scss",
+                "input": "src/app/styles/themes/dark-theme.scss",
                 "bundleName": "dark-theme",
                 "inject": false
               },
               {
-                "input": "src/app/themes/light-theme.scss",
+                "input": "src/app/styles/themes/light-theme.scss",
                 "bundleName": "light-theme",
                 "inject": false
               }

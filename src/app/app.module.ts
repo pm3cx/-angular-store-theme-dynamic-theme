@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { NgxsModule } from '@ngxs/store';
 import { NgxsStoragePluginModule } from '@ngxs/storage-plugin';
 import { AppState } from './store/app.state';
-import { environment } from './environments/environments';
+import { environment } from '../environments/environments';
 
 // More info for NGXS store: https://www.ngxs.io/concepts/store
 
