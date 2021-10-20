@@ -32,12 +32,12 @@ export class AppComponent implements OnInit {
     const path = '../src/app/styles/themes/';
     let themeLink = this.document.getElementById('theme') as HTMLLinkElement;
     if (themeLink) {
-      themeLink.href = path + theme + '.css';
+      themeLink.href = theme + '.css';
     } else {
       const style = this.document.createElement('link');
       style.id = 'theme';
       style.rel = 'stylesheet';
-      style.href = path + theme + '.css';
+      style.href = theme + '.css';
       head.appendChild(style);
     }
   }
